@@ -1,0 +1,21 @@
+<center>
+<h1> Welcome to Accent WLC Online! </h1>
+
+<div class="login">
+	<div class="container">
+		<div class="form">
+
+      <h1>Log in</h1>
+			<br><br>
+      <%= form_for(:session, url: login_path) do |f| %> 
+  <%= f.email_field :email, :placeholder => "Email" %> <br><br>
+  <%= f.password_field :password, :placeholder => "Password" %> <br><br>
+  <%= f.submit "Log in", class: "btn-submit btn-lg btn-info" %>
+<% end %>
+
+		
+    </div>
+	</div>
+</div>
+
+</center>

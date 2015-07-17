@@ -1,0 +1,27 @@
+p {
+	font-size: 18px;
+	line-height: 150%;
+	font-family: 'Raleway';
+	
+}
+
+.alert-box{
+	background-color: #f1c40f;
+	color: white;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+.centerme{
+	text-align: center;
+}
+
+
+.blue{
+	color: blue;
+}
+
+b {
+	color:red;
+}

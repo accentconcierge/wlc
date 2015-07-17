@@ -1,0 +1,33 @@
+<center>
+
+
+	<% if current_user && current_user_admin? %>
+
+	<div class="login">
+	  <div class="container">
+	    <div class="form">
+
+	    <h1>Sign up</h1>
+
+	    <%= form_for(@user) do |f| %>
+	      <%= f.text_field :first_name, :placeholder => "First name" %>
+	      <%= f.text_field :last_name, :placeholder => "Last name" %>
+	      <%= f.email_field :email, :placeholder => "Email" %>
+	      <%= f.check_box :gender, :placeholder => 'Male or Female' %>
+	      <%= f.password_field :password, :placeholder => "Password" %>
+	      <%= f.submit "Create an account", class: "btn-submit" %>
+	    <% end %>
+
+	  
+	    </div>
+	  </div>
+	</div>
+
+	<%else%>
+	<br><br>
+	<div class = 'container'>
+		<h3>If you would like to register for this program, please send a text to 404.800.1499.</h3>
+	</div>
+
+	<%end%>
+</center>
